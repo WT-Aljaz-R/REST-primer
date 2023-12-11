@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  import-service-database:
+    init: true
+    container_name: rest-primer-db
+    image: postgres
+    ports:
+      - "15438:5432"
+    environment:
+      POSTGRES_DB: rest-primer-db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres

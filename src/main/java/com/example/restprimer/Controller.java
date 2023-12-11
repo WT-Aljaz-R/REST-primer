@@ -27,7 +27,7 @@ public class Controller {
         return repository.findById(id).get();
     }
 
-    @PutMapping("/oseba")
+    @PutMapping("/{oseba-id}")
     Oseba putOseba(@PathVariable("oseba-id") Integer id, @RequestBody Oseba novaOseba){
         return repository.findById(id)
                 .map(oseba -> {

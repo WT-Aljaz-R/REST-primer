@@ -1,0 +1,28 @@
+### Ustvari osebo
+POST http://localhost:8080/oseba
+Content-Type: application/json
+
+{
+    "id": 4,
+    "ime": "Miha",
+    "priimek": "Gabr"
+}
+
+### Vse osebe
+GET http://localhost:8080/osebe
+
+### Ena oseba
+GET http://localhost:8080/2
+
+### Spremeni osebo
+PUT http://localhost:8080/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "ime": "Miha",
+  "priimek": "Gabrin"
+}
+
+### Izbriši osebo
+DELETE http://localhost:8080/4
